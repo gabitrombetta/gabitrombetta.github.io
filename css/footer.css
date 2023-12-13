@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+.footer{
+    background-color: #000000;
+}
+
+.footer-container{
+    max-width: 1200px;
+    padding: 120px 20px 60px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #cccccc;
+}
+
+.footer-contato li{
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    color: #ffffff;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footer-contato li a{
+    color: #ffffff;
+}
+
+.footer-copy{
+    grid-column: 1 /-1;
+    font-size: 1.125rem;
+    color: #8f8f8f;
+}
+
+.footer-contato li a::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 20px;
+    background: linear-gradient(#0CA1C2, #035b9a);
+    rotate: 90deg;
+    position: absolute;
+    top: 12px;
+    left: -20px;
+}
+
+.footer-contato .email::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 20px;
+    background: linear-gradient(#0CA1C2, #035b9a);
+    rotate: 90deg;
+    position: absolute;
+    top: 12px;
+    left: -20px;
+}
+
+.footer-contato .telefone::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 20px;
+    background: linear-gradient(#0CA1C2, #035b9a);
+    rotate: 90deg;
+    position: absolute;
+    top: 12px;
+    left: -20px;
+}
+
+@media (max-width: 800px){
+    .footer-container{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .footer-contato li{
+        font-size: 1.5rem;
+    }
+    .footer-contato li{
+        padding-left: 35px;
+    }
+    .footer-contato li a::before{
+        content: "";
+        display: block;
+        width: 5px;
+        height: 20px;
+        background: linear-gradient(#0CA1C2, #035b9a);
+        rotate: 90deg;
+        position: absolute;
+        top: 5px;
+        left: 12px;
+        
+    }
+    
+    .footer-contato .email::before{
+        content: "";
+        display: block;
+        width: 5px;
+        height: 20px;
+        background: linear-gradient(#0CA1C2, #035b9a);
+        rotate: 90deg;
+        position: absolute;
+        top: 5px;
+        left: 12px;
+    }
+    
+    .footer-contato .telefone::before{
+        content: "";
+        display: block;
+        width: 5px;
+        height: 20px;
+        background: linear-gradient(#0CA1C2, #035b9a);
+        rotate: 90deg;
+        position: absolute;
+        top: 5px;
+        left: 12px;
+    }
+}
